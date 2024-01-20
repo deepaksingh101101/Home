@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import './Home.css'
 import Card from '../../components/card/Card'
+import {video} from '../../images/images'
 export default function Home() {
 const cardData=[
     {
@@ -40,7 +41,7 @@ const cardData=[
             <div className='col-12 col-lg-6'>
                 <div className='d-flex justify-content-center'>
                     <video width="500" height="300" className='video_responsive' controls>
-                        <source src="movie.mp4" type="video/mp4"/>
+                        <source src={video} type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>
                 </div>
